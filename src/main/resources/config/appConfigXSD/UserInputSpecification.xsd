@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Mon May 30 2016 17:40:39 GMT+0530 (India Standard Time) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="UserInputSpecification">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="DataSources">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="DataSource" maxOccurs="unbounded">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="GeneralInfo">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="InputFileLocation" type="xs:string"></xs:element>
+                                                                                 <xs:element name="OutputFileLocation" type="xs:string"></xs:element>
+                                                                                 <xs:element name="IntermediateLoc" type="xs:string"></xs:element>
+                                                                                 <xs:element name="Repetition" type="xs:int"></xs:element>
+                                                                                 <xs:element name="NumberOfNode" type="xs:int"></xs:element>
+                                                                                 <xs:element name="TimeZone" type="xs:string"></xs:element>
+                                                                                 <xs:element name="ROPTime" type="xs:int"></xs:element>
+                                                                                 <xs:element name="FileType" type="xs:string"></xs:element>
+                                                                                 <xs:element name="Ranges">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="Range" maxOccurs="unbounded">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="MIN" type="xs:string"></xs:element>
+                                                                                                                     <xs:element name="MAX" type="xs:string"></xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                                 <xs:element name="Conditions">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="Condition" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                         <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!-- XML Schema Generated from XML Document on Wed Feb 17 2016 20:01:15 GMT+0530 (India Standard Time) -->
+<!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+<xs:element name="mdc">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="mfh">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="ffv" type="xs:string"></xs:element>
+                                             <xs:element name="sn" type="xs:string"></xs:element>
+                                             <xs:element name="st" type="xs:string"></xs:element>
+                                             <xs:element name="vn" type="xs:string"></xs:element>
+                                             <xs:element name="cbt" type="xs:string"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="md" maxOccurs="unbounded">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="neid">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="neun" type="xs:string"></xs:element>
+                                                               <xs:element name="nedn" type="xs:string"></xs:element>
+                                                               <xs:element name="nesw" type="xs:string"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="mi" maxOccurs="unbounded">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="mts" type="xs:string"></xs:element>
+                                                               <xs:element name="gp" type="xs:int"></xs:element>
+                                                               <xs:element name="mt" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                               <xs:element name="mv" maxOccurs="unbounded">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="moid" type="xs:string"></xs:element>
+                                                                                 <xs:element name="r" maxOccurs="unbounded" type="xs:string"></xs:element>
+                                                                                 <xs:element name="sf" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="mff">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="ts" type="xs:string"></xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>
+

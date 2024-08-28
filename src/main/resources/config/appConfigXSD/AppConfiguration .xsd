@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Fri Feb 19 2016 12:01:08 GMT+0530 (India Standard Time) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="AppConfiguration">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="DataSource" maxOccurs="unbounded">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="Release">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="FileNamePattern" type="xs:string"></xs:element>
+                                                               <xs:element name="UTCPattern" type="xs:string"></xs:element>
+                                                         </xs:sequence>
+                                                         <xs:attribute name="value" type="xs:string"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="value" type="xs:string"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>

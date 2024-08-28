@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserInputSpecification>
+<DeletionFactor>1</DeletionFactor>
+	<DataSources>
+		<DataSource name="RADIO">
+			<GeneralInfo>
+				<InputFileLocation>S:\xsishai\input_radio</InputFileLocation>
+				<OutputFileLocation>S:\xsishai\intermediate_radio</OutputFileLocation>
+				<IntermediateLoc>S:\xsishai\intermediate_radio</IntermediateLoc>
+				<Repetition>96</Repetition>
+				<NumberOfNode>10000</NumberOfNode>
+				<TimeZone>NONUTC</TimeZone>
+				<ROPTime>15</ROPTime>
+				<FileType>XML</FileType>
+			</GeneralInfo>
+			<EnrichmentOptions>
+				<GenericEnrichment>
+					<Element>
+						<Name>pmRadioUeRepRankDistr</Name>
+						<Value type="IncrementType">
+							<Increment>
+								<BaseValue>996</BaseValue>
+								<IncrementBy>1</IncrementBy>
+							</Increment>
+						</Value>
+					</Element>
+					<!-- <Element>
+						<Name>pmRlcArqDlAck</Name>
+						<Value type="ListType">
+							<List type="CYCLIC">
+								<ListElement>000</ListElement>
+								<ListElement>001</ListElement>
+								<ListElement>997</ListElement>
+								<ListElement>996</ListElement>
+							</List>
+						</Value>
+					</Element> -->
+					<!-- <Element>
+						<Name>pmRlcArqDlAck</Name>
+						<Value type="RandomType">
+							<Random>
+								<MinValue>995</MinValue>
+								<MaxValue>1000</MaxValue>
+							</Random>
+						</Value>
+					</Element> -->
+					<!-- <Element>
+						<Name>pmRlcArqDlAck</Name>
+						<Value type="FixedType">
+							<Fixed>999</Fixed>
+						</Value>
+					</Element> -->
+				</GenericEnrichment>
+			</EnrichmentOptions>
+		</DataSource>
+	</DataSources>
+</UserInputSpecification>

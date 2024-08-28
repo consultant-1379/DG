@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppConfiguration>
+
+	 <DataSource name="WRAN-LTE">
+	<Release value="S|AA11">
+			<FileNamePattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?+(?&lt;StartTimeOffset&gt;[-\+]\d{4})?-(?&lt;EndTime&gt;\d{4})?+(?&lt;EndTimeOffset&gt;[-\+]\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</FileNamePattern>		
+			<UTCPattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?-(?&lt;EndTime&gt;\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</UTCPattern>
+			</Release>
+	</DataSource>
+ <DataSource name="RADIO">
+	<Release value="S|AA11">
+			<FileNamePattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?+(?&lt;StartTimeOffset&gt;[-\+]\d{4})?-(?&lt;EndTime&gt;\d{4})?+(?&lt;EndTimeOffset&gt;[-\+]\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</FileNamePattern>		
+			<UTCPattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?-(?&lt;EndTime&gt;\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</UTCPattern>
+			</Release>
+	</DataSource>
+	<DataSource name="SGSN-MME">
+	<Release value="S|AA11">
+			<FileNamePattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?+(?&lt;StartTimeOffset&gt;[-\+]\d{4})?-(?&lt;EndDate&gt;\d{8})\.(?&lt;EndTime&gt;\d{4})?+(?&lt;EndTimeOffset&gt;[-\+]\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</FileNamePattern>		
+			<UTCPattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?-(?&lt;EndTime&gt;\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</UTCPattern>
+			</Release>
+	</DataSource>
+	<DataSource name="LTE-Event-Statistics">
+	<Release value="S|AA11">
+			<FileNamePattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?-(?&lt;EndTime&gt;\d{4})?+(?&lt;EndTimeOffset&gt;[-\+]\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</FileNamePattern>		
+			<UTCPattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?-(?&lt;EndTime&gt;\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</UTCPattern>
+			</Release>
+	</DataSource>
+	<DataSource name="IPWORKS">
+	<Release value="S|AA11">
+			<FileNamePattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?-(?&lt;EndTime&gt;\d{4})?+(?&lt;EndTimeOffset&gt;[-\+]\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</FileNamePattern>		
+			<UTCPattern>[ABCD](?&lt;Date&gt;\d{8})\.(?&lt;StartTime&gt;\d{4})?-(?&lt;EndTime&gt;\d{4})?_(?&lt;UniqueId&gt;[\w\W]+)</UTCPattern>
+			</Release>
+	</DataSource>
+</AppConfiguration>
